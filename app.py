@@ -9,7 +9,7 @@ st.title("Web Search Assistant")
 st.markdown(
     """
 ### Please ask anything to search in the Web. 
-#### (DuckDuckGo is not working because of HTTP exception...)
+#### (DuckDuckGo is not working on Streamlit due to an HTTP exception....)
 """
 )
 
