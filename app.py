@@ -9,7 +9,7 @@ st.title("Web Search Assistant")
 st.markdown(
     """
 ### Please ask anything to search in the Web. 
-##### (DuckDuckGo is not working on Streamlit due to an HTTP exception....)
+##### (DuckDuckGo is currently not functioning in Streamlit due to an HTTP exception, so it operates exclusively with Wikipedia.)
 """
 )
 
@@ -33,7 +33,7 @@ with st.sidebar:
 
 if api_key:
     util = Util()
-    util.create_assistant()
+    util.create_or_get_assistant()
     keyword = st.text_input("Search keyword", placeholder="Example : Tesla")
     if keyword:
         util.create_or_get_thread(keyword)
