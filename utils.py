@@ -23,7 +23,7 @@ class Util:
             name="Web Search Assistant",
             instructions="""
             You are a helpful researcher.
-            You will search the keyword in wikipedia or duckduck go.
+            You will search the keyword in wikipedia.
             Example:
               keyword:Apple
             if you run duckduckgo tool, you have to scrap the first web page.
