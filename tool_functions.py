@@ -45,23 +45,23 @@ functions = [
             },
         },
     },
-    {
-        "type": "function",
-        "function": {
-            "name": "duckduckgo_tool",
-            "description": "Use this tool to search keywords in DuckDuckGo. It takes a query as an argument. Example query: Tesla",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "query": {
-                        "type": "string",
-                        "description": "The query you will search for",
-                    },
-                },
-                "required": ["query"],
-            },
-        },
-    },
+    # {
+    #     "type": "function",
+    #     "function": {
+    #         "name": "duckduckgo_tool",
+    #         "description": "Use this tool to search keywords in DuckDuckGo. It takes a query as an argument. Example query: Tesla",
+    #         "parameters": {
+    #             "type": "object",
+    #             "properties": {
+    #                 "query": {
+    #                     "type": "string",
+    #                     "description": "The query you will search for",
+    #                 },
+    #             },
+    #             "required": ["query"],
+    #         },
+    #     },
+    # },
     {
         "type": "function",
         "function": {
