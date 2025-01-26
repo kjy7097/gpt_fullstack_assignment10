@@ -1,5 +1,5 @@
 from langchain.utilities import WikipediaAPIWrapper, DuckDuckGoSearchAPIWrapper
-from langchain.tools import WikipediaQueryRun, DuckDuckGoSearchResults
+from langchain.tools import WikipediaQueryRun, DuckDuckGoSearchRun
 from langchain.document_loaders import WebBaseLoader
 import os
 
@@ -10,7 +10,7 @@ def wikipedia_tool(inputs):
 
 
 def duckduckgo_tool(inputs):
-    ddg = DuckDuckGoSearchResults(api_wrapper=DuckDuckGoSearchAPIWrapper())
+    ddg = DuckDuckGoSearchRun(api_wrapper=DuckDuckGoSearchAPIWrapper())
     return ddg.run(inputs["query"])
 
 
